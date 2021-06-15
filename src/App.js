@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./styles.css";
+import DateRangePicker from "react-bootstrap-daterangepicker";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-daterangepicker/daterangepicker.css";
+import moment from "moment";
 
-function App() {
+export default function App() {
+  const [fromDate, setFromDate] = useState(new Date());
+  const [toDate, setToDate] = useState(new Date());
+  const range = {
+    "Hari ini": [moment(), moment()],
+    Kemarin: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+    "7 Hari terakhir": [moment().subtract(6, "days"), moment()],
+    "30 Hari terakhir": [moment().subtract(29, "days"), moment()],
+    "Bulan Ini": [moment().startOf("month"), moment().endOf("month")]
+  };
+
+  const handleEvent = (event, picker) => {
+    console.log("start: ", picker.startDate._d);
+    console.log("end: ", picker.endDate._d);
+    setFromDate(picker.startDate._d.toISOString());
+    setToDate(picker.endDate._d.toISOString());
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DateRangePicker
+        // startDate={new Date()}
+        // endDate={new Date()}
+        ranges={range}
+        alwaysShowCalendars={true}
+        onEvent={handleEvent}
+      >
+        <button>
+          {moment(fromDate).format("LL")} to {moment(toDate).format("LL")}
+        </button>
+      </DateRangePicker>
     </div>
   );
 }
-
-export default App;
