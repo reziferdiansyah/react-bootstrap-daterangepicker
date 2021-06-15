@@ -1,6 +1,6 @@
 # SIMPLE REACT BOOTSTRAP DATERANGEPICKER
 
-![display](client/public/screenshot1.png)
+![display](public/screenshot1.png)
 
 # Getting Started with Create React App
 
