@@ -1,7 +1,10 @@
 # SIMPLE REACT BOOTSTRAP DATERANGEPICKER
 
-### `clone`
+### `clone HTTPS`
 git clone https://github.com/reziferdiansyah/react-bootstrap-daterangepicker.git
+
+### `clone SSH`
+git clone git@github.com:reziferdiansyah/react-bootstrap-daterangepicker.git
 
 ### `cd client`
 ### `npm install`
