@@ -1,6 +1,6 @@
 # SIMPLE REACT BOOTSTRAP DATERANGEPICKER
 
-# CLONING
+### `clone`
 git clone https://github.com/reziferdiansyah/react-bootstrap-daterangepicker.git
 
 ### `cd client`
