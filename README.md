@@ -1,5 +1,12 @@
 # SIMPLE REACT BOOTSTRAP DATERANGEPICKER
 
+# CLONING
+git clone https://github.com/reziferdiansyah/react-bootstrap-daterangepicker.git
+
+### `cd client`
+### `npm install`
+### `npm start`
+
 ![display](public/screenshot1.png)
 
 # Getting Started with Create React App
