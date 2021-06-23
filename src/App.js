@@ -26,8 +26,6 @@ export default function App() {
   return (
     <div className="App">
       <DateRangePicker
-        // startDate={new Date()}
-        // endDate={new Date()}
         ranges={range}
         alwaysShowCalendars={true}
         onEvent={handleEvent}
