@@ -10,7 +10,7 @@ git clone git@github.com:reziferdiansyah/react-bootstrap-daterangepicker.git
 ### `npm install`
 ### `npm start`
 
-![display](public/screenshot1.png)
+![display](public/screenshot1.jpeg)
 
 # Getting Started with Create React App
 
